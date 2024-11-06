@@ -1,0 +1,7 @@
+.env
+.osp
+/.env
+/example/
+/example/houses.sql
+/example/users.sql
+/.idea
