@@ -9,10 +9,10 @@
     </div>
     <nav class="header__nav">
       <ul class="header__nav-list">
-        <li class="header__li"><a href="#main">Главная</a></li>
-        <li class="header__li"><a href="#main">О нас</a></li>
-        <li class="header__li"><a href="#call">Обратная связь</a></li>
-        <li class="header__li"><a href="#catalog">Каталог</a></li>
+        <li class="header__li"><a href="/#main">Главная</a></li>
+        <li class="header__li"><a href="/#main">О нас</a></li>
+        <li class="header__li"><a href="/#call">Обратная связь</a></li>
+        <li class="header__li"><a href="/#catalog">Каталог</a></li>
         <?php if (!isset($_SESSION['user'])) { ?>
           <li><a href="/login" class="register-button">Войти</a></li>
         <?php } else { ?>

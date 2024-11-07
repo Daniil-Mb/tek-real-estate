@@ -11,7 +11,15 @@ class IndexAdminHouseController extends AbstractController
         $data = $this->database->query(
             query: "SELECT * FROM `houses`"
         );
-//        var_dump($data);
-        $this->view('admin/house/index.php');
+
+        $houses = array_map(fn($i) => new HouseData(
+            id: $i['id'],
+            name: $i['name'],
+            description: $i['description'],
+            price: $i['price'],
+            image: $i['image'],
+        ), $data);
+
+        $this->view('admin/house/index.php', ['houses' => $houses]);
     }
 }

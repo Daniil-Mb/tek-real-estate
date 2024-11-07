@@ -2,6 +2,7 @@
 
 use Controllers\Admin\Feedback\IndexAdminFeedbackController;
 use Controllers\Admin\House\CreateAdminHouseController;
+use Controllers\Admin\House\DestroyAdminHouseController;
 use Controllers\Admin\House\IndexAdminHouseController;
 use Controllers\Admin\House\StoreAdminHouseController;
 use Controllers\Admin\IndexAdminController;
@@ -22,9 +23,9 @@ if (isset($router)) {
     $router->delete('/logout', LogoutController::class);
 
     $router->get('/admin', IndexAdminController::class)->only('admin');
-
     $router->get('/admin/houses', IndexAdminHouseController::class)->only('admin');
     $router->get('/admin/house/create', CreateAdminHouseController::class)->only('admin');
     $router->post('/admin/house/create', StoreAdminHouseController::class)->only('admin');
+    $router->delete('/admin/house/destroy', DestroyAdminHouseController::class)->only('admin');
     $router->get('/admin/feedback', IndexAdminFeedbackController::class)->only('admin');
 }
