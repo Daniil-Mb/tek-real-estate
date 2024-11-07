@@ -6,6 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <?php
+    /** @var array<int, Controllers\Admin\House\HouseData> $houses */
+    ?>
 </head>
 <body>
 <?php require_once __DIR__ . '/../layouts/header.php'?>
@@ -68,48 +71,21 @@
             </section>
             <section class="purchase" id="catalog">
                 <h2 class="purchase__h2">Каталог</h2>
+                <?php foreach ($houses as $house) { ?>
                 <div class="purchase__cart">
-                    <img src="https://20.img.avito.st/image/1/1.2H1k2ra5dJRSc7aRWJXwbUV7dpLae_acEn52ltZvcJY.-l-MgHtbHzwALaJd78-0Cjp0pgSkixCKOoVlWW3gCzY" alt="" class="purchase__img">
+                    <img src="<?=$house->image?>" alt="Для этой невижемости нету картинки" class="purchase__img">
                     <div class="purchase__info">
                         <div class="purchase__left">
-                            <p class="purchase__left-top">Продажа 3-комнатной квартиры 86м², 5/24 этаж</p>
-                            <p class="purchase__left-botom">Москва, Даниловский, Даниловский, Летниковская ул., 11, к 2</p>
+                            <p class="purchase__left-top"><?=$house->name?></p>
+                            <p class="purchase__left-botom"><?=$house->description?></p>
                             <button class="purchase__button">Подробнее</button>
                         </div>
                         <div class="purchase__right">
-                            <p class="purchase__right-top">42 500 000 ₽</p>
-                            <p class="purchase__right-botom">494 187 ₽/м²</p>
+                            <p class="purchase__right-top"><?=$house->price?> ₽</p>
                         </div>
                     </div>
                 </div>
-                <div class="purchase__cart">
-                    <img src="https://20.img.avito.st/image/1/1.ml8tpra5NrYbD_SzFbCwTwwHNLCTB7S-WwI0tJ8TMrQ.YsjLDBwujOgzfjsNJWXkM39mUrOVfblQXJTQGLwvErA" alt="" class="purchase__img">
-                    <div class="purchase__info">
-                        <div class="purchase__left">
-                            <p class="purchase__left-top">Продажа 3-комнатной квартиры 86м², 5/24 этаж</p>
-                            <p class="purchase__left-botom">Москва, Даниловский, Даниловский, Летниковская ул., 11, к 2</p>
-                            <button class="purchase__button">Подробнее</button>
-                        </div>
-                        <div class="purchase__right">
-                            <p class="purchase__right-top">42 500 000 ₽</p>
-                            <p class="purchase__right-botom">494 187 ₽/м²</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="purchase__cart">
-                    <img src="https://80.img.avito.st/image/1/1.flQod7a50r0e3hC4WF48HRHW0LuW1lC1XtPQv5rC1r8.pBJ_hbvdOkf7GqZa3i2rhXecOnsnbqxZIt69ZIluUD4" alt="" class="purchase__img">
-                    <div class="purchase__info">
-                        <div class="purchase__left">
-                            <p class="purchase__left-top">Продажа 3-комнатной квартиры 86м², 5/24 этаж</p>
-                            <p class="purchase__left-botom">Москва, Даниловский, Даниловский, Летниковская ул., 11, к 2</p>
-                            <button class="purchase__button">Подробнее</button>
-                        </div>
-                        <div class="purchase__right">
-                            <p class="purchase__right-top">42 500 000 ₽</p>
-                            <p class="purchase__right-botom">494 187 ₽/м²</p>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </section>
             <section class="news"></section>
             <section class="connection"></section>

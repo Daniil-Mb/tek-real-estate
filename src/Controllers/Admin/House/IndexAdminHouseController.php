@@ -8,18 +8,20 @@ class IndexAdminHouseController extends AbstractController
 {
     public function __invoke(): void
     {
-        $data = $this->database->query(
+        $housesArray = $this->database->query(
             query: "SELECT * FROM `houses`"
         );
 
-        $houses = array_map(fn($i) => new HouseData(
+        $housesCollection = array_map(fn($i) => new HouseData(
             id: $i['id'],
             name: $i['name'],
             description: $i['description'],
             price: $i['price'],
             image: $i['image'],
-        ), $data);
+        ), $housesArray);
 
-        $this->view('admin/house/index.php', ['houses' => $houses]);
+        $this->view('admin/house/index.php',
+            ['houses' => $housesCollection]
+        );
     }
 }
