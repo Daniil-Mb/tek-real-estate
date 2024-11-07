@@ -16,11 +16,14 @@
         <?php if (!isset($_SESSION['user'])) { ?>
           <li><a href="/login" class="register-button">Войти</a></li>
         <?php } else { ?>
-          <li>
+          <li class="header-login-item">
             <form action="/logout" method="POST">
               <input type="hidden" name="_method" value="DELETE">
-              <button class="logout-button" type="submit">Выйти</button>
+              <button class="default-button" type="submit">Выйти</button>
             </form>
+            <?php if ($_SESSION['user']['is_admin']) { ?>
+              <a class="default-button" href="/admin">Админка</a>
+            <?php } ?>
           </li>
         <?php } ?>
       </ul>
@@ -28,7 +31,7 @@
   </div>
 </header>
 
-<style>@charset "UTF-8";
+<style>
 * {
   padding: 0;
   margin: 0;
@@ -147,6 +150,13 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.header-login-item {
+    display: flex;
+    align-items: center;
+}
+.header-login-item>form{
+    margin: 5px;
 }
 .header__log {
   margin-right: 70px;
@@ -486,7 +496,7 @@ img {
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
 
-    .logout-button {
+    .default-button {
         background-color: unset;
         border: 0;
         cursor: pointer;
@@ -494,6 +504,7 @@ img {
         border-radius: 20px;
         padding: 10px 20px;
         background: #21b1ff;
+        height: 35px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
 /* Флекс-контейнер для body */

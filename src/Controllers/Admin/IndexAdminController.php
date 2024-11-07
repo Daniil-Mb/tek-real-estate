@@ -4,10 +4,10 @@ namespace Controllers\Admin;
 
 use Controllers\AbstractController;
 
-class AdminHouseController extends AbstractController
+class IndexAdminController extends AbstractController
 {
     public function __invoke(): void
     {
-        echo 'admin';
+        $this->view('admin/index.php');
     }
 }

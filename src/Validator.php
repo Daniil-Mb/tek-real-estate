@@ -5,7 +5,8 @@ use database\Database;
 class Validator
 {
     public static function string(
-        string $string, int $min = 1, int $max = INF
+        //TODO убрать float
+        string $string, int $min = 1, int|float $max = INF
     ): bool
     {
         return strlen($string) >= $min && strlen($string) <= $max;
