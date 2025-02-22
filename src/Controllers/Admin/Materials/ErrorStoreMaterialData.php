@@ -1,8 +1,8 @@
 <?php
 
-namespace Controllers\Admin\House;
+namespace Controllers\Admin\Materials;
 
-class ErrorStoreHouseData
+class ErrorStoreMaterialData
 {
     public function __construct(
         public ?string $name = null,

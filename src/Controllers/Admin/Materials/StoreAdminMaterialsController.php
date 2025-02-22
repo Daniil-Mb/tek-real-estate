@@ -1,21 +1,21 @@
 <?php
 
-namespace Controllers\Admin\House;
+namespace Controllers\Admin\Materials;
 
 use Controllers\AbstractController;
 use Validator;
 
-class StoreAdminHouseController extends AbstractController
+class StoreAdminMaterialsController extends AbstractController
 {
     public function __invoke(): void
     {
-        $data = new StoreHouseData(
+        $data = new StoreMaterialData(
             name: $_POST['name'] ?? '',
             description: $_POST['description'] ?? '',
             price: $_POST['price'],
             image: $_POST['image'] ?? '',
         );
-        $errors = new ErrorStoreHouseData();
+        $errors = new ErrorStoreMaterialData();
 
         if (!Validator::string($data->name, 2, 50)) {
             $errors->name = 'Имя должно быть от 2х до 50 симоволов';
@@ -30,7 +30,7 @@ class StoreAdminHouseController extends AbstractController
         }
 
         if (!empty(array_filter(get_object_vars($errors)))) {
-            $this->view('admin/house/create.php', [
+            $this->view('admin/material/create.php', [
                 'data' => $data,
                 'errors' => $errors,
             ]);
@@ -39,7 +39,7 @@ class StoreAdminHouseController extends AbstractController
         }
 
         $this->database->query(
-            query: 'INSERT INTO houses (name, description, price, image) VALUES (:name, :description, :price, :image)',
+            query: 'INSERT INTO materials (name, description, price, image) VALUES (:name, :description, :price, :image)',
             params: [
                 ':name' => $data->name,
                 ':description' => $data->description,
@@ -48,6 +48,6 @@ class StoreAdminHouseController extends AbstractController
             ],
         );
 
-        header('Location: /admin/houses');
+        header('Location: /admin/materials');
     }
 }

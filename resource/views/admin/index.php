@@ -17,7 +17,7 @@
   <nav class="admin-nav">
     <h2 class="admin-panel">Админ панель</h2>
     <ul class="admin-panel-list">
-      <li><a href="/admin/houses">Недвижимость</a></li>
+      <li><a href="/admin/materials">Материалы</a></li>
       <li><a href="/admin/feedback">Заявки</a></li>
     </ul>
   </nav>

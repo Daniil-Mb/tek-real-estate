@@ -1,10 +1,10 @@
 <?php
 
 use Controllers\Admin\Feedback\IndexAdminFeedbackController;
-use Controllers\Admin\House\CreateAdminHouseController;
-use Controllers\Admin\House\DestroyAdminHouseController;
-use Controllers\Admin\House\IndexAdminHouseController;
-use Controllers\Admin\House\StoreAdminHouseController;
+use Controllers\Admin\Materials\CreateAdminMaterialController;
+use Controllers\Admin\Materials\DestroyAdminMaterialController;
+use Controllers\Admin\Materials\IndexAdminMaterialController;
+use Controllers\Admin\Materials\StoreAdminMaterialsController;
 use Controllers\Admin\IndexAdminController;
 use Controllers\Home\IndexHomeController;
 use Controllers\Login\IndexLoginController;
@@ -23,9 +23,10 @@ if (isset($router)) {
     $router->delete('/logout', LogoutController::class);
 
     $router->get('/admin', IndexAdminController::class)->only('admin');
-    $router->get('/admin/houses', IndexAdminHouseController::class)->only('admin');
-    $router->get('/admin/house/create', CreateAdminHouseController::class)->only('admin');
-    $router->post('/admin/house/create', StoreAdminHouseController::class)->only('admin');
-    $router->delete('/admin/house/destroy', DestroyAdminHouseController::class)->only('admin');
+    $router->get('/admin/materials', IndexAdminMaterialController::class)->only('admin');
+    $router->get('/admin/material/create', CreateAdminMaterialController::class)->only('admin');
+    $router->post('/admin/material/create', StoreAdminMaterialsController::class)->only('admin');
+    $router->delete('/admin/material/destroy', DestroyAdminMaterialController::class)->only('admin');
+
     $router->get('/admin/feedback', IndexAdminFeedbackController::class)->only('admin');
 }

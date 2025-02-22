@@ -3,26 +3,26 @@
 namespace Controllers\Home;
 
 use Controllers\AbstractController;
-use Controllers\Admin\House\HouseData;
+use Controllers\Admin\Materials\MaterialData;
 
 class IndexHomeController extends AbstractController
 {
     public function __invoke(): void
     {
-        $housesArray = $this->database->query(
-            query: "SELECT * FROM `houses`"
+        $materialsArray = $this->database->query(
+            query: "SELECT * FROM `materials`"
         );
 
-        $housesCollection = array_map(fn($i) => new HouseData(
+        $materialsCollection = array_map(fn($i) => new MaterialData(
             id: $i['id'],
             name: $i['name'],
             description: $i['description'],
             price: $i['price'],
             image: $i['image'],
-        ), $housesArray);
+        ), $materialsArray);
 
-        $this->view('home/index.php',
-            ['houses' => $housesCollection]
+        $this->view('material/index.php',
+            ['materials' => $materialsCollection]
         );
     }
 }

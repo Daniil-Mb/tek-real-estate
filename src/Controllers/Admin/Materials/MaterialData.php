@@ -1,8 +1,8 @@
 <?php
 
-namespace Controllers\Admin\House;
+namespace Controllers\Admin\Materials;
 
-class HouseData
+class MaterialData
 {
     public function __construct(
         public int $id,

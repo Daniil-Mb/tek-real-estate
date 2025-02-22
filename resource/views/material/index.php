@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <?php
-    /** @var array<int, Controllers\Admin\House\HouseData> $houses */
+    /** @var array<int, Controllers\Admin\Materials\MaterialData> $materials */
     ?>
 </head>
 <body>
@@ -71,17 +71,17 @@
             </section>
             <section class="purchase" id="catalog">
                 <h2 class="purchase__h2">Каталог</h2>
-                <?php foreach ($houses as $house) { ?>
+                <?php foreach ($materials as $material) { ?>
                 <div class="purchase__cart">
-                    <img src="<?=$house->image?>" alt="Для этой невижемости нету картинки" class="purchase__img">
+                    <img src="<?=$material->image?>" alt="Для этой невижемости нету картинки" class="purchase__img">
                     <div class="purchase__info">
                         <div class="purchase__left">
-                            <p class="purchase__left-top"><?=$house->name?></p>
-                            <p class="purchase__left-botom"><?=$house->description?></p>
+                            <p class="purchase__left-top"><?=$material->name?></p>
+                            <p class="purchase__left-botom"><?=$material->description?></p>
                             <button class="purchase__button">Подробнее</button>
                         </div>
                         <div class="purchase__right">
-                            <p class="purchase__right-top"><?=$house->price?> ₽</p>
+                            <p class="purchase__right-top"><?=$material->price?> ₽</p>
                         </div>
                     </div>
                 </div>
