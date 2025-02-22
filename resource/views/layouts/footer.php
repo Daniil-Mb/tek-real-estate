@@ -1,14 +1,14 @@
 <footer class="footer" style="bottom: 0;">
         <div class="footer__container">
             <div class="footer__logo">
-                <img class="footer__logo-img" src="https://psv4.userapi.com/s/v1/d/woQwOtRTx3u4tZigZ6Q6N4Yw8e496oIvxX-r2AB6wb6hb_9zJuOVuDlK7nSjAMh05XRZVGqsCqZwSFaVQuKAMw4QUxSsAhn2PTsGibDb_X5wEXlPqT9LBw/domTekddddddddddddd.png" alt="logo">
+                <img class="footer__logo-img" src="/img/icon-cement.png" alt="logo">
                 <div class="footer__logo-name">
-                    <p class="footer__logo-name--top">ЖИЛЭКСПЕРТ</p>
+                    <p class="footer__logo-name--top">СтройТЭК</p>
                     <p class="footer__logo-name--bottom">Ваш дом - наша забота!</p>
                 </div>
             </div>
             <div class="footer__p-mid">
-                <p class="footer__p">Торгово-строительная компания «ЖИЛЭКСПЕРТ», 123456, г.Тула, ул. Каминская 1, офис 1, ИНН 1234567890 ОГРН 123456789012</p>
+                <p class="footer__p">Торгово-строительная компания «СтройТЭК», 123456, г.Тула, ул. Каминская 1, офис 1, ИНН 1234567890 ОГРН 123456789012</p>
             </div>
             <div class="footer__info">
                 <p class="footer__info-text">8 (990) 999 99 99</p>
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="footer__cont">
-            <p class="footer__cont-left">©2024 ЖИЛЭКСПЕРТ. Все права защищены</p>
+            <p class="footer__cont-left">©2024 СтройТЭК. Все права защищены</p>
             <a class="footer__cont-right">Политика конфиденциальности</a>
         </div>
     </footer>

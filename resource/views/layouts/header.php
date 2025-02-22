@@ -1,9 +1,9 @@
 <header>
 <div class="header__container">
     <div class="header__logo">
-      <img class="header__logo-img" src="https://psv4.userapi.com/s/v1/d/95OW2b9BTbCCQSMam-4bhw-WtASuWBboLED2t9wbJSEIUDTapMjd7LcxE_lpZk44Sv3wbn31ZTt5755Je5_AF15D9T2sddVpIhzGSjCGOYz9LEJHa2v2_g/domTek.png" alt="logo">
+      <img class="header__logo-img" src="/img/icon-cement.png" alt="logo">
       <div class="header__logo-name">
-        <p class="header__logo-name--top">ЖИЛЭКСПЕРТ</p>
+        <p class="header__logo-name--top">СтройТЭК</p>
         <p class="header__logo-name--bottom">Ваш дом - наша забота!</p>
       </div>
     </div>
@@ -129,8 +129,9 @@ a {
   gap: 10px;
 }
 .header__logo-img {
-  max-width: 100px;
-  max-height: 100px;
+  margin: 10px;
+  max-width: 80px;
+  max-height: 80px;
 }
 .header__logo-name {
   padding-top: 14px;
@@ -279,6 +280,7 @@ a {
   justify-content: center;
 }
 .form__consent {
+  text-align: center;
   font-weight: 400;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.5);
@@ -364,8 +366,9 @@ a {
   gap: 10px;
 }
 .footer__logo-img {
-  max-width: 100px;
-  max-height: 100px;
+  margin: 10px;
+  max-width: 80px;
+  max-height: 80px;
 }
 .footer__logo-name {
   padding-top: 14px;
@@ -418,7 +421,7 @@ a {
   max-width: 1780px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 150px;
 }
@@ -430,6 +433,7 @@ a {
   color: rgba(0, 0, 0, 0.5);
 }
 .footer__cont-right {
+  text-align: center;
   font-weight: 400;
   font-size: 18px;
   text-decoration: underline; /* Добавляет подчеркивание */

@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Перенаправляем все запросы в папку public
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+
+    # Если запрос идет к корню, перенаправляем на public/index.php
+    RewriteCond %{REQUEST_URI} ^/$
+    RewriteRule ^(.*)$ public/index.php [L]
+</IfModule>

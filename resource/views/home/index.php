@@ -15,34 +15,34 @@
 <main>
 <div class="main__container" id="main">
             <section class="about">
-                <h1 class="about__h1">Агентсво недвижемости «ЖИЛЭКСПЕРТ»</h1>
+                <h1 class="about__h1">Строительные материалы «СтройТЭК»</h1>
                 <h2 class="about__h2">Дорогие посетители! Мы рады приветствовать вас на нашем сайте!</h2>
                 <div class="about__block">
                     <div class="about__card">
-                        <img src="https://sun9-72.userapi.com/impg/kGLUcd5DKSUEUrMViDyRudRSMH2QUo6tMMmvZA/sq2kQ3s9Tq4.jpg?size=512x512&quality=95&sign=62e413e8acde3b4722fcd3a93bcc1c43&type=album" alt="" class="about__img">
+                        <img src="/img/icon-building-material.png" alt="" class="about__img">
                         <div class="about__text">
-                            <p class="about__text-top">Продажа недвижимости</p>
-                            <p class="about__text-bottom">Продадим вашу недвижимость выгодно, быстро и безопасно</p>
+                            <p class="about__text-top">Продажа строй материалов</p>
+                            <p class="about__text-bottom">Продадим строй материалы, быстро и безопасно</p>
                         </div>
                     </div>
                     <div class="about__card">
-                        <img src="https://sun9-33.userapi.com/impg/21XAMMmGJLPTsM_jEKyKlTQrrilJKm-039weuA/K9IHaMk5YFs.jpg?size=512x512&quality=95&sign=16e06facf8e85671e9345cd234531943&type=album" alt="" class="about__img">
+                        <img src="/img/icon-worker.png" alt="" class="about__img">
                         <div class="about__text">
-                            <p class="about__text-top">Проверка недвижимости</p>
-                            <p class="about__text-bottom">Досконально проверим объект и собственника, минимизируем риски</p>
+                            <p class="about__text-top">Высококачественные специалисты</p>
+                            <p class="about__text-bottom">Досконально проверим стройматериалы, минимизируем риски</p>
                         </div>
                     </div>
                     <div class="about__card">
-                        <img src="https://sun9-76.userapi.com/impg/WI6aZf7hCMnG7fzFpMiDfofGAHt4pgWfF9q8dg/X84Th2APRRs.jpg?size=512x512&quality=95&sign=8be2257bb8c326c4f593069e1340f3ea&type=album" alt="" class="about__img">
+                        <img src="/img/icon-industry.png" alt="" class="about__img">
                         <div class="about__text">
-                            <p class="about__text-top">Оценка недвижимости</p>
-                            <p class="about__text-bottom">Рассчитаем стоимость вашей недвижимости и поможем продать дороже</p>
+                            <p class="about__text-top">Доставка в любую точку</p>
+                            <p class="about__text-bottom">Рассчитаем стоимость доставки и доставим в убодные вам сроки</p>
                         </div>
                     </div>
                     <div class="about__card">
-                        <img src="https://sun9-4.userapi.com/impg/cvi6ATPaDsD4Om-VKhScpPUbQMAN8FKrcosk1w/KPS0ieCQFCQ.jpg?size=512x512&quality=95&sign=75ad4bfd7bf21bd8b62e665c21fb9735&type=album" alt="" class="about__img">
+                        <img src="/img/icon-construction.png" alt="" class="about__img">
                         <div class="about__text">
-                            <p class="about__text-top">Страхование недвижимости</p>
+                            <p class="about__text-top">Страхование материалов</p>
                             <p class="about__text-bottom">Защитим вас и ваше имущество от любых непредвиденных обстоятельств</p>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
             </section>
             <section class="form" id="call">
                 <div class="form__block">
-                    <h2 class="form__h2">Купите квартиру прямо сейчас</h2>
+                    <h2 class="form__h2">Купите закажите материалы прямо сейчас</h2>
                     <div class="form__field">
                         <p class="form__p">Введите имя</p>
                         <input type="text" class="form__input" placeholder="Введите имя">
